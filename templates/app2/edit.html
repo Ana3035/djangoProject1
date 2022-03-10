@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富文本</title>
+{#    下面这一行是写死的#}
+    <script type="text/javascript" src="/static/app2/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinyMCE.init({
+            'mode':"textareas",
+            'theme':"mobile",
+            'width':800,
+            'height':600,
+            })
+    </script>
+</head>
+<body>
+{#    <form action="/saveedit/" method="post">#这里表示的是新写一个视图用来存储#}
+<form>
+        <label>
+            <textarea name="str">Ana</textarea>
+        </label>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
